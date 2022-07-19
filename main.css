@@ -16,7 +16,7 @@ article {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin: 88px 24px;
+  margin: 88px min(24px, 10%);
   background-color: hsl(244, 38%, 16%);
   border-radius: 8px;
   overflow: hidden;
@@ -28,9 +28,15 @@ article {
   width: 100%;
   height: 240px;
   background-size: cover;
-  background-blend-mode: soft-light;
+  background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-position-x: center;
+}
+
+.header-img > div {
+  background-color: hsla(277, 64%, 61%, 0.2);
+  width: 100%;
+  height: 100%;
 }
 
 section {
@@ -95,7 +101,7 @@ h4 {
     font-size: 35px;
   }
 }
-@media screen and (min-width: 1110px) {
+@media screen and (min-width: 1140px) {
   article {
     margin-right: auto;
     margin-left: auto;
@@ -107,4 +113,5 @@ h4 {
 }
 .attribution a {
   color: hsl(277, 64%, 61%);
+  text-decoration: none;
 }
